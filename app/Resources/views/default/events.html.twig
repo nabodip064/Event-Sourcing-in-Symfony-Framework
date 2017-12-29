@@ -1,0 +1,10 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    
+    {% for command in commands %}
+        {%  for e in command %}
+            <a href="/commandDetails/{{ e }}" >{{ e }}</a><br>
+        {% endfor %}
+    {% endfor %}
+{% endblock %}

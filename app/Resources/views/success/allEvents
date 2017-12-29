@@ -1,0 +1,22 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <table>
+        <thead>
+            <th>Event</th>
+            <th>Version</th>
+        </thead>
+        <tbody>
+            {% for evnt in event %}
+                <tr>
+                    <td>{{ evnt.events }}</td>
+                    <td>{{ evnt.version }}</td>
+                </tr>
+    {% endfor %}<br>
+        </tbody>
+    </table><br>
+    <a href="/events" >Go to events</a><br>
+    <br>
+    <a href="/" >Go to Index</a>
+
+{% endblock %}

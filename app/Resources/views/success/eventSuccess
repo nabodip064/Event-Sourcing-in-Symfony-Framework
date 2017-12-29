@@ -1,0 +1,8 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <form action="/" method="post">
+        <h2>Data sucessfully inserted...</h2>
+        <input type="submit" value="Go back to index" class="btn btn-primary"><br><br>
+    </form>
+{% endblock %}

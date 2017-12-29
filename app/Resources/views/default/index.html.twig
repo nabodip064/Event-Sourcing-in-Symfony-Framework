@@ -1,0 +1,21 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+    <form action="/events" method="post">
+        <input type="submit" value="Events" name="events" class="btn btn-primary"><br><br>
+    </form>
+
+    <form action="/read" method="post">
+        <input type="submit" value="Read" name="read" class="btn btn-primary"><br><br>
+    </form>
+
+    <form action="/create" method="post">
+        <input type="submit" value="Write" name="write" class="btn btn-primary"><br><br>
+    </form>
+
+    <form action="/delete" method="post">
+        <input type="submit" value="Deletion" name="delete" class="btn btn-primary">
+    </form>
+
+{% endblock %}

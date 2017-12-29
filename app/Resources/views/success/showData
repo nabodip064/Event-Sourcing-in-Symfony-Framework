@@ -1,0 +1,12 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    {% for item in result %}
+        {% for it in item %}
+            {{ it }}
+            {% endfor %}
+    {% endfor %}
+    <form action="/" method="post">
+        <input type="submit" value="Go back to index" class="btn btn-primary"><br><br>
+    </form>
+{% endblock %}

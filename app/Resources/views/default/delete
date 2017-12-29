@@ -1,0 +1,9 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <form action="/events/delete" method="post">
+        Enter User Id:<br>
+        <input type="text" name="userIdInput"><br><br>
+        <input type="submit" value="Delete" name="submit" class="btn btn-danger">
+    </form>
+{% endblock %}

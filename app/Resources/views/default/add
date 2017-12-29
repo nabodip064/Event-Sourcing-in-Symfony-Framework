@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <form action="/addUser" method="post">
+        <input type="submit" value="Add new User" name="addUser" class="btn btn-primary"><br><br>
+    </form>
+
+    <form action="/changePassword" method="post">
+        <input type="submit" value="Change Passord" name="changePassword" class="btn btn-primary"><br><br>
+    </form>
+{% endblock %}
